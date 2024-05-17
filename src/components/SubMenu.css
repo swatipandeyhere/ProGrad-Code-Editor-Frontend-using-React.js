@@ -2,12 +2,12 @@
     margin: 20px;
 }
 
-.sub-menu a span:last-of-type {
+.sub-menu span:last-of-type {
     margin-left: 35vw;
 }
 
 #languages {
-    margin-left: 4.3vw;
+    margin-left: 5.1vw;
     border-radius: 5px;
 }
 
@@ -15,5 +15,5 @@
     width: 19px;
     height: 20px;
     border-radius: 5px;
-    margin-left: 16.7vw;
+    margin-left: 10.9vw;
 }

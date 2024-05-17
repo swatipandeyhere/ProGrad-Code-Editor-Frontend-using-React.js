@@ -6,9 +6,7 @@ export default function SubMenu() {
     return (
         <div className="sub-menu">
             <span>Description</span>
-            <a href="/">
-                <span>Solutions</span>
-            </a>
+            <span>Solutions</span>
 
             <select name="languages" id="languages">
                 <option value="Select Language">Select Language</option>

@@ -3,7 +3,7 @@ import "./Navbar.css"
 import ProGradLogo from '../images/ProGrad-Logo.png'
 import UserAvatar from '../images/User-Avatar.png'
 
-export default function Navbar() {
+export default function Navbar(props) {
     return (
         <div className='navbar'>
             <a href="https://prograd.org/" target="_blank" rel="noreferrer">
@@ -25,6 +25,12 @@ export default function Navbar() {
                         clipRule='evenodd'></path>
                 </svg>
             </a>
+
+            <span className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
+                <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch"
+                    id="flexSwitchCheckDefault" />
+                <label className="form-check-label" htmlFor="flexSwitchCheckDefault"> Toggle Mode</label>
+            </span>
 
             <a href="/">
                 <img src={UserAvatar} alt="User-Avatar" className="user-avatar" />
